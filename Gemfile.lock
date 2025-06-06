@@ -113,6 +113,7 @@ GEM
     ffi (1.17.2-x86_64-linux-musl)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    htmlbeautifier (1.4.3)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     io-console (0.8.0)
@@ -336,6 +337,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  htmlbeautifier
   jbuilder
   jsbundling-rails
   puma (>= 5.0)
