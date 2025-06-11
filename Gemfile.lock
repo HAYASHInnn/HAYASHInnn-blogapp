@@ -118,6 +118,10 @@ GEM
     htmlbeautifier (1.4.3)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
+    importmap-rails (2.1.0)
+      actionpack (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
     io-console (0.8.0)
     irb (1.15.2)
       pp (>= 0.6.0)
@@ -341,6 +345,7 @@ DEPENDENCIES
   debug
   faker
   htmlbeautifier
+  importmap-rails
   jbuilder
   jsbundling-rails
   puma (>= 5.0)
