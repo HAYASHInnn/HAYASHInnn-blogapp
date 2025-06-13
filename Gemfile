@@ -60,6 +60,8 @@ group :development do
   gem "web-console"
   gem "htmlbeautifier"
   gem "html2haml"
+  gem 'annotate', git: 'https://github.com/ctran/annotate_models.git'
+
 end
 
 group :test do
