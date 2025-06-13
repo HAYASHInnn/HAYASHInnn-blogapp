@@ -33,11 +33,10 @@ gem 'bootsnap', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-
 gem 'sassc-rails'
-
 gem 'importmap-rails'
-
+gem 'better_errors'
+gem 'binding_of_caller'
 gem 'faker'
 gem 'hamlit'
 
