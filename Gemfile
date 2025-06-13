@@ -39,6 +39,7 @@ gem "sassc-rails"
 gem "importmap-rails"
 
 gem "faker"
+gem "hamlit"
 
 
 group :development, :test do
@@ -58,6 +59,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem "htmlbeautifier"
+  gem "html2haml"
 end
 
 group :test do
@@ -65,3 +67,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "haml-rails", "~> 2.1"
