@@ -44,10 +44,6 @@ class User < ApplicationRecord
     likes.exists?(article_id: article.id)
   end
 
-  def display_name
-    profile&.nickname || self.email.split('@').first
-  end
-
   def follow!(user)
     user_id = get_user_id(user)
     following_relationships.create!(following_id: user_id)
