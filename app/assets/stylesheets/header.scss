@@ -13,15 +13,15 @@ $back-icon-size: 16px;
 
   a {
     color: white;
-  }
 
-  &_loginBtn {
-    background-color: $base-bg-color;
-    height: $avatar-size;
-    border-radius: 8px;
-    font-size: 12px;
-    padding: 11px 16px;
-    color: $primary-color;
+    &.header_loginBtn {
+      background-color: $base-bg-color;
+      height: $avatar-size;
+      border-radius: 8px;
+      font-size: 12px;
+      padding: 11px 16px;
+      color: $primary-color;
+    }
   }
 
   &_logos {
