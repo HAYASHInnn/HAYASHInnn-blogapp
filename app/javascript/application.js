@@ -8,7 +8,7 @@ import $ from "jquery";
 import axios from "axios";
 
 // .article_titleをクリックするとアラームが表示される
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('turbo:load', () => {
     $('.article_title').on('click', () => {
         axios.get('/')
             .then((Response) => {
