@@ -4,3 +4,8 @@ import "@hotwired/turbo-rails"
 
 import "trix"
 import "@rails/actiontext"
+
+// ページが表示されたときにアラームを出す
+document.addEventListener('DOMContentLoaded', () => {
+    window.alert('DOM LOADED')
+})
