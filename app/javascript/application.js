@@ -5,10 +5,14 @@ import "trix";
 import "@rails/actiontext";
 
 import $ from "jquery";
+import axios from "axios";
 
 // .article_titleをクリックするとアラームが表示される
 document.addEventListener("DOMContentLoaded", () => {
     $('.article_title').on('click', () => {
-        window.alert('CLICKED')
+        axios.get('/')
+            .then((Response) => {
+                console.log(Response)
+            })
     })
 });
