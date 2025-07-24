@@ -8,11 +8,11 @@ import $ from "jquery";
 import axios from "axios";
 
 // .article_titleをクリックするとアラームが表示される
-document.addEventListener('turbo:load', () => {
-    const dataset = $('#article_show').data()
-    const articleId = dataset.articleId
-    axios.get(`/articles/${articleId}/like`)
-        .then((response) => {
-            console.log(response)
-        })
-})
+document.addEventListener("turbo:load", () => {
+  const dataset = $("#article_show").data();
+  const articleId = dataset.articleId;
+  axios.get(`/articles/${articleId}/like`).then((response) => {
+    debugger
+    console.log(response);
+  });
+});
