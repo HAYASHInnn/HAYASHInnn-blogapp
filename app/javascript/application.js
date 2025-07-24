@@ -9,10 +9,10 @@ import axios from "axios";
 
 // .article_titleをクリックするとアラームが表示される
 document.addEventListener('turbo:load', () => {
-    $('.article_title').on('click', () => {
-        axios.get('/')
-            .then((Response) => {
-                console.log(Response)
-            })
-    })
-});
+    const dataset = $('#article_show').data()
+    const articleId = dataset.articleId
+    axios.get(`/articles/${articleId}/like`)
+        .then((response) => {
+            console.log(response)
+        })
+})

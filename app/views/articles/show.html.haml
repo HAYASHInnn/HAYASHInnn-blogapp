@@ -1,4 +1,4 @@
-.article
+.article#article_show{data: {article_id: @article.id}}
   - if @article.eyecatch.attached?
     .article_image
       = image_tag @article.eyecatch
