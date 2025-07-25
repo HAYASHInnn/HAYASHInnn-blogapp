@@ -31,7 +31,10 @@ document.addEventListener("turbo:load", () => {
     axios
       .post(`/articles/${articleId}/like`)
       .then((response) => {
-        console.log(response);
+        if (response.data.status === "ok") {
+          $(".active-heart").removeClass("hidden");
+          $(".inactive-heart").addClass("hidden");
+        }
       })
       .catch((e) => {
         window.alert("Error");
@@ -43,7 +46,10 @@ document.addEventListener("turbo:load", () => {
     axios
       .delete(`/articles/${articleId}/like`)
       .then((response) => {
-        console.log(response);
+        if (response.data.status === "ok") {
+          $(".inactive-heart").removeClass("hidden");
+          $(".active-heart").addClass("hidden");
+        }
       })
       .catch((e) => {
         window.alert("Error");
