@@ -47,7 +47,6 @@ gem 'importmap-rails'
 gem 'sassc-rails'
 
 gem 'psych', '~> 3.1'
-gem 'webpacker', '~> 4.0', '>= 4.0.7'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -70,7 +69,8 @@ group :development do
   gem 'html2haml'
   gem 'htmlbeautifier'
   gem 'web-console'
-
+  gem 'letter_opener'
+  gem 'letter_opener_web', '~> 3.0'
 end
 
 group :test do
