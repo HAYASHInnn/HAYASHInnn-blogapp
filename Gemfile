@@ -70,7 +70,8 @@ group :development do
   gem 'html2haml'
   gem 'htmlbeautifier'
   gem 'web-console'
-
+  gem 'letter_opener'
+  gem 'letter_opener_web', '~> 3.0'
 end
 
 group :test do
