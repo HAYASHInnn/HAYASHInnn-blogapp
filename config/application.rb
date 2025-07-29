@@ -29,5 +29,6 @@ module HayashInnnBlogapp
     # config.eager_load_paths << Rails.root.join("extras")
     config.i18n.default_locale = :ja
     config.active_storage.variant_processor = :mini_magick
+    config.active_job.queue_adapter = :sidekiq
   end
 end

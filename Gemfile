@@ -45,6 +45,7 @@ gem 'faker'
 gem 'hamlit'
 gem 'importmap-rails'
 gem 'sassc-rails'
+gem 'sidekiq'
 
 gem 'psych', '~> 3.1'
 
