@@ -1,4 +1,4 @@
-class LikesController < ApplicationController
+class Api::LikesController < Api::ApplicationController
     # ログイン必須
     before_action :authenticate_user!
 
